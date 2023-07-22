@@ -15,6 +15,9 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<cucumber-java-version>7.13.0</cucumber-java-version>
+		<cucumber-junit5-version>7.13.0</cucumber-junit5-version>
+		<cucumber-spring-version>7.13.0</cucumber-spring-version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -44,6 +47,24 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber-java-version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit-platform-engine</artifactId>
+			<version>${cucumber-junit5-version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-spring</artifactId>
+			<version>${cucumber-spring-version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

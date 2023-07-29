@@ -8,13 +8,21 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("customer")
-@Getter @NoArgsConstructor @Setter @ToString
+@Getter
+@NoArgsConstructor
+@Setter
+@ToString
 public class Customer {
     @Id
     private String id;
+    private String customerRef;
     private String name;
     private String age;
     private String emailAddress;
     private Integer mobileNo;
     private Address address;
+
+    public void validate() {
+
+    }
 }
